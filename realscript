@@ -1,0 +1,40 @@
+$("document").ready(function() {
+
+    $(".divider" ).draggable();
+
+
+
+
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'Otto Benson - 20220924.mp3');
+    audioElement.setAttribute('autoplay', 'autoplay');
+    //audioElement.load()
+    $.get();
+    audioElement.addEventListener("load", function() {
+    audioElement.play();
+    }, true);
+
+
+ $( ".button" ).click(function() {
+          audioElement.play();
+          $( ".button").addClass("fadeout");
+          $( ".button").addClass("hidden");
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
